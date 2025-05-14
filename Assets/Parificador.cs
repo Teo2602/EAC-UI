@@ -20,6 +20,11 @@ public class Parificador : MonoBehaviour
     }
     public void ispar()
     {
+        if (Num1.text == "")
+        {
+            mensage.text = "El campo esta vaío";
+            return;
+        }
         int num1 = int.Parse(Num1.text);
         int resto = num1 % 2;
         if (num1 < 0)
